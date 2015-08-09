@@ -1,4 +1,4 @@
-update=sáb 08 ago 2015 18:16:53 COT
+update=sáb 08 ago 2015 19:50:46 COT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../libs
@@ -62,3 +60,5 @@ LibName30=oled_066
 LibName31=bq24040
 LibName32=tps62200
 LibName33=ESP8266
+[general]
+version=1
