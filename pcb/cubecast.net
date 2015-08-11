@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/afc/devel/hackbo/cubecast/pcb/cubecast.sch)
-    (date "lun 10 ago 2015 07:26:02 COT")
+    (date "mar 11 ago 2015 06:10:45 COT")
     (tool "Eeschema (2015-08-08 BZR 6073)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -53,11 +53,13 @@
       (tstamp 55C68B3E))
     (comp (ref U1)
       (value bq24040)
+      (footprint SMD:R-PWSON-N10)
       (libsource (lib bq24040) (part bq24040))
       (sheetpath (names /) (tstamps /))
       (tstamp 55C68F96))
     (comp (ref U2)
       (value tps62200)
+      (footprint TO_SOT_Packages_SMD:SOT-23-5)
       (libsource (lib tps62200) (part tps62200))
       (sheetpath (names /) (tstamps /))
       (tstamp 55C6910F))
@@ -157,21 +159,6 @@
         (field (name Value) CONN_01X01))
       (pins
         (pin (num 1) (name P1) (type passive))))
-    (libpart (lib bq24040) (part bq24040)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) bq24040))
-      (pins
-        (pin (num 1) (name IN) (type input))
-        (pin (num 2) (name ISET) (type input))
-        (pin (num 3) (name VSS) (type input))
-        (pin (num 4) (name PRETERM) (type input))
-        (pin (num 5) (name ~PG) (type input))
-        (pin (num 6) (name NC) (type NotConnected))
-        (pin (num 7) (name ISET2) (type input))
-        (pin (num 8) (name ~CHG) (type input))
-        (pin (num 9) (name TS) (type input))
-        (pin (num 10) (name OUT) (type input))))
     (libpart (lib oled_066) (part OLED_0.66_inch_64x48)
       (fields
         (field (name Reference) OLED)
@@ -215,6 +202,21 @@
         (pin (num 3) (name EN) (type input))
         (pin (num 4) (name FB) (type input))
         (pin (num 5) (name SW) (type input))))
+    (libpart (lib bq24040) (part bq24040)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) bq24040))
+      (pins
+        (pin (num 1) (name IN) (type input))
+        (pin (num 2) (name ISET) (type input))
+        (pin (num 3) (name VSS) (type input))
+        (pin (num 4) (name PRETERM) (type input))
+        (pin (num 5) (name ~PG) (type input))
+        (pin (num 6) (name NC) (type NotConnected))
+        (pin (num 7) (name ISET2) (type input))
+        (pin (num 8) (name ~CHG) (type input))
+        (pin (num 9) (name TS) (type input))
+        (pin (num 10) (name OUT) (type input))))
     (libpart (lib ESP8266) (part ESP-12)
       (aliases
         (alias ESP-07v2))
